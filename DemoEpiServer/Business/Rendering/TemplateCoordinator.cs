@@ -37,12 +37,7 @@ namespace DemoEpiServer.Business.Rendering
         /// </remarks>
         public void Register(TemplateModelCollection viewTemplateModelRegistrator)
         {
-            viewTemplateModelRegistrator.Add(typeof(JumbotronBlock), new TemplateModel
-            {
-                Tags = new[] { Global.ContentAreaTags.FullWidth },
-                AvailableWithoutTag = false,
-                Path = BlockPath("JumbotronBlockWide.cshtml")
-            });
+           
 
             viewTemplateModelRegistrator.Add(typeof(TeaserBlock), new TemplateModel
             {
@@ -69,13 +64,7 @@ namespace DemoEpiServer.Business.Rendering
                 Path = PagePartialPath("PageWide.cshtml")
             });
 
-            viewTemplateModelRegistrator.Add(typeof(ContactPage), new TemplateModel
-            {
-                Name = "ContactPagePartialWide",
-                Tags = new[] { Global.ContentAreaTags.TwoThirdsWidth, Global.ContentAreaTags.FullWidth },
-                AvailableWithoutTag = false,
-                Path = PagePartialPath("ContactPageWide.cshtml")
-            });
+           
 
             viewTemplateModelRegistrator.Add(typeof(IContentData), new TemplateModel
             {

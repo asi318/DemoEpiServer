@@ -31,7 +31,6 @@ namespace DemoEpiServer.Models.Pages
             GroupName = SystemTabNames.Content,
             Order = 310)]
         [CultureSpecific]
-        [AllowedTypes(new[] { typeof(IContentData) }, new[] { typeof(JumbotronBlock) })]
         public virtual ContentArea RelatedContentArea { get; set; }
 
         /// <summary>
