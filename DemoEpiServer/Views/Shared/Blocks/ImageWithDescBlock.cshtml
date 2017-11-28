@@ -1,0 +1,10 @@
+@using EPiServer.Core
+@model ImageWithDescBlock
+<div class="border">
+    @*Link the teaser block only if a link has been set and not displayed in preview*@
+
+        <p @Html.EditAttributes(x => x.ImageDescription)>@Model.ImageDescription</p>
+        <div @Html.EditAttributes(x => x.Image)><img src="@Url.ContentUrl(Model.Image)" /></div>
+   
+
+</div>

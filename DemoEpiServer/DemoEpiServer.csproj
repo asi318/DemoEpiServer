@@ -15,7 +15,7 @@
     <AssemblyName>DemoEpiServer</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>true</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>4.0</OldToolsVersion>
@@ -27,6 +27,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -386,6 +387,9 @@
     <Compile Include="Models\Blocks\AccordionBlock.cs" />
     <Compile Include="Models\Blocks\EditorialBlock.cs" />
     <Compile Include="Models\Blocks\FormBlock.cs" />
+    <Compile Include="Models\Blocks\ImageBlock.cs" />
+    <Compile Include="Models\Blocks\ImageWithDescBlock.cs" />
+    <Compile Include="Models\Blocks\LinkListBlock.cs" />
     <Compile Include="Models\Blocks\PageListBlock.cs" />
     <Compile Include="Models\Blocks\SiteBlockData.cs" />
     <Compile Include="Models\Blocks\SiteLogotypeBlock.cs" />
@@ -394,6 +398,7 @@
     <Compile Include="Models\Media\ImageFile.cs" />
     <Compile Include="Models\Media\VideoFile.cs" />
     <Compile Include="Models\Pages\ArticlePage.cs" />
+    <Compile Include="Models\Pages\CommonPage.cs" />
     <Compile Include="Models\Pages\ContainerPage.cs" />
     <Compile Include="Models\Pages\FindSearchPage.cs" />
     <Compile Include="Models\Pages\IHasRelatedContent.cs" />
@@ -539,6 +544,9 @@
     <Content Include="module.config" />
     <Content Include="Views\Register\Index.cshtml" />
     <Content Include="Views\Shared\Blocks\AccordionBlock.cshtml" />
+    <Content Include="Views\Shared\Blocks\ImageBlock.cshtml" />
+    <Content Include="Views\Shared\Blocks\ImageWithDescBlock.cshtml" />
+    <Content Include="Views\Shared\Blocks\LinkListBlock.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -554,7 +562,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:58764/</IISUrl>
+          <IISUrl>http://localhost/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
