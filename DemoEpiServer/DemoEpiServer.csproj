@@ -394,6 +394,7 @@
     <Compile Include="Models\Blocks\SiteBlockData.cs" />
     <Compile Include="Models\Blocks\SiteLogotypeBlock.cs" />
     <Compile Include="Models\Blocks\TeaserBlock.cs" />
+    <Compile Include="Models\Blocks\VideoBlock.cs" />
     <Compile Include="Models\Media\GenericMedia.cs" />
     <Compile Include="Models\Media\ImageFile.cs" />
     <Compile Include="Models\Media\VideoFile.cs" />
@@ -548,6 +549,7 @@
     <Content Include="Views\Shared\Blocks\ImageWithDescBlock.cshtml" />
     <Content Include="Views\Shared\Blocks\LinkListBlock.cshtml" />
     <Content Include="Views\CommonPage\Index.cshtml" />
+    <Content Include="Views\Shared\Blocks\VideoBlock.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
