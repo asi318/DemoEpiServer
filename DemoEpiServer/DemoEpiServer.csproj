@@ -547,6 +547,7 @@
     <Content Include="Views\Shared\Blocks\ImageBlock.cshtml" />
     <Content Include="Views\Shared\Blocks\ImageWithDescBlock.cshtml" />
     <Content Include="Views\Shared\Blocks\LinkListBlock.cshtml" />
+    <Content Include="Views\CommonPage\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
