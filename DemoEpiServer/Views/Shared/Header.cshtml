@@ -9,7 +9,7 @@
                 @Html.PropertyFor(x => x.Layout.Logotype)
             </a>
         </div>
-        <div class="span10">
+        <div class="span8">
             
             <div class="alloyMenu">
                 <div class="navbar">
@@ -47,6 +47,43 @@
             </div>
 
         </div>
+
+        <div class="span2">
+            <div class="lang-selector">
+                <ul class="list-inline">
+                    @{
+                        var activeLanguages = EPiServer.ServiceLocation.ServiceLocator.Current.GetInstance<EPiServer.DataAbstraction.ILanguageBranchRepository>().ListEnabled();
+                        var preferredLang = EPiServer.Globalization.ContentLanguage.PreferredCulture.Name;
+                        var langSelectListItem = new List<SelectListItem>();
+                        foreach (var lang in activeLanguages)
+                        {
+                            SelectListItem selectItem = new SelectListItem();
+                            selectItem.Text = lang.Name;
+                            selectItem.Value = lang.LanguageID;
+
+                            <li>
+                                @if (string.Equals(preferredLang, lang.LanguageID, StringComparison.InvariantCultureIgnoreCase))
+                                {
+                                    selectItem.Selected = true;
+                                    @lang.Name
+                                }
+                                else
+                                {
+                                    //selectItem.Value = @Html.PageLink(lang.Name, Model.CurrentPage.PageLink, new { language = lang.LanguageID }, null)
+                                    @Html.PageLink(lang.Name, Model.CurrentPage.PageLink, new { language = lang.LanguageID }, null)
+                                }
+                            </li>
+
+                            langSelectListItem.Add(selectItem);
+                        }
+
+                    }
+                </ul>
+                @*@Html.DropDownList(preferredLang, langSelectListItem)*@
+            </div>
+
+        </div>
+
     </div>
 </div>
 
