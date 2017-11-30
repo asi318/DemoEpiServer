@@ -11,7 +11,7 @@ namespace DemoEpiServer.Models.Blocks
     {
         [CultureSpecific]
         [Display(
-            Name = "Name",
+            Name = "Accordion ID",
             Description = "Name field's description",
             GroupName = SystemTabNames.Content,
             Order = 1)]
