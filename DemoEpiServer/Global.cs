@@ -45,6 +45,7 @@ namespace DemoEpiServer
         /// </summary>
         public static class ContentAreaTags
         {
+            public const string ContainerFluid = "container-fluid";
             public const string Sidebar = "Sidebar";
             public const string FullWidth = "span12";
             public const string TwoThirdsWidth = "span8";

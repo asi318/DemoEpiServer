@@ -2,14 +2,14 @@
 @using EPiServer.Core
 @using EPiServer.Web
 @model IPageViewModel<SitePageData>
-<div class="row">
-    <div id="header">
-        <div class="span2">
+<div >
+    <div id="header" class="container-fluid">
+        <div class="row">
             <a href="@Model.Layout.LogotypeLinkUrl" title="@Model.Layout.Logotype.Title">
                 @Html.PropertyFor(x => x.Layout.Logotype)
             </a>
         </div>
-        <div class="span10">
+        <div class="col-md-12">
             
             <div class="alloyMenu">
                 <div class="navbar">
@@ -22,9 +22,9 @@
                             </a>         
                             <div class="nav-collapse">
                                 <ul class="nav">
-                                    <li class="@(Model.CurrentPage.ContentLink.CompareToIgnoreWorkID(SiteDefinition.Current.StartPage) ? "active" : null)">@Html.ContentLink(SiteDefinition.Current.StartPage)</li>
+                                    <li class="@(Model.CurrentPage.ContentLink.CompareToIgnoreWorkID(SiteDefinition.Current.StartPage) ? "active" : null)  col-md-2">@Html.ContentLink(SiteDefinition.Current.StartPage)</li>
                                     @Html.MenuList(SiteDefinition.Current.StartPage, 
-                                                   @<li class="@(item.Selected ? "active" : null)">
+                                                   @<li class="col-md-2 @(item.Selected ? "active" : null)">
                                                         @Html.PageLink(item.Page, null, new { @class = string.Join(" ", item.Page.GetThemeCssClassNames())})
                                                     </li>) 
                                 </ul>

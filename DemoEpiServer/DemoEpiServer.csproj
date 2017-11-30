@@ -368,6 +368,7 @@
     <Compile Include="Business\ServiceLocatorDependencyResolver.cs" />
     <Compile Include="Business\UIDescriptors\ContainerPageUIDescriptor.cs" />
     <Compile Include="Business\UIDescriptors\ICarouselBlockUIDescriptor.cs" />
+    <Compile Include="Controllers\ArticlePageController.cs" />
     <Compile Include="Controllers\DefaultPageController.cs" />
     <Compile Include="Controllers\FindSearchPageController.cs" />
     <Compile Include="Controllers\ImageFileController.cs" />
@@ -385,6 +386,7 @@
     <Compile Include="Helpers\HtmlHelpers.cs" />
     <Compile Include="Helpers\UrlHelpers.cs" />
     <Compile Include="Models\Blocks\AccordionContentBlock.cs" />
+    <Compile Include="Models\Blocks\ArticleBlock.cs" />
     <Compile Include="Models\Blocks\ButtonBlock.cs" />
     <Compile Include="Models\Blocks\AccordionBlock.cs" />
     <Compile Include="Models\Blocks\CarouselBlock.cs" />
@@ -568,6 +570,7 @@
     <Content Include="Static\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Static\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Views\Shared\Blocks\ArticleBlock.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

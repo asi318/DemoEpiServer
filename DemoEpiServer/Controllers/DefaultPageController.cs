@@ -21,6 +21,7 @@ namespace DemoEpiServer.Controllers
     {
         public ViewResult Index(SitePageData currentPage)
         {
+            
             var model = CreateModel(currentPage);
             return View(string.Format("~/Views/{0}/Index.cshtml", currentPage.GetOriginalType().Name), model);
         }

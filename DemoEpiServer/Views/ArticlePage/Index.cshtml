@@ -1,13 +1,21 @@
-@using DemoEpiServer
+﻿@using EPiServer.Web.Routing
 @model PageViewModel<ArticlePage>
 
-@{ Layout = "~/Views/Shared/Layouts/_LeftNavigation.cshtml"; }
-
-<h1 @Html.EditAttributes(x => x.CurrentPage.PageName)>@Model.CurrentPage.PageName</h1>
-<p class="introduction" @Html.EditAttributes(x => x.CurrentPage.MetaDescription)>@Model.CurrentPage.MetaDescription</p>
-<div class="row">
-    <div class="span8 clearfix" @Html.EditAttributes(x => x.CurrentPage.MainBody)>
-        @Html.DisplayFor(m => m.CurrentPage.MainBody)
+@if (Model != null)
+{
+<div class="accordion" role="tablist">
+    <div class="card">
+        <div class="card-header" role="tab" id="heading_@(Model.CurrentPage.ID)">
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" href="#collapse_@(Model.CurrentPage.ID)" aria-expanded="true" aria-controls="collapseOne">
+                    @Model.CurrentPage.Heading
+                </div>
+            </div>
+            <div class="collapse in" id="collapse_@(Model.CurrentPage.ID)" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+                <div class="container"> <span class="col-sm-8">@Model.CurrentPage.Description</span> <span class="col-sm-4"><img src="@UrlResolver.Current.GetUrl(Model.CurrentPage.Image)" style="width:80px;height:80px" /></span></div>
+            </div>
+        </div>
     </div>
 </div>
-@Html.PropertyFor(x => x.CurrentPage.MainContentArea, new { CssClass = "row", Tag = Global.ContentAreaTags.TwoThirdsWidth })
+}
+

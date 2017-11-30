@@ -18,7 +18,7 @@ namespace DemoEpiServer.Models.Pages
             GroupName = SystemTabNames.Content,
             Order=310)]
         [CultureSpecific]
-        public virtual ContentArea MainContentArea { get; set; }
+        public virtual ContentArea MainContentArea { get; set; }      
 
         public override void SetDefaultValues(ContentType contentType)
         {

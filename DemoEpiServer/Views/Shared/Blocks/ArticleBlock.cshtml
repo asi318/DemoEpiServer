@@ -1,0 +1,91 @@
+@model ArticleBlock
+
+
+@{
+    var repository = EPiServer.ServiceLocation.ServiceLocator.Current.GetInstance<EPiServer.IContentRepository>();
+
+    // Get content (page or block) with ID 5
+    // var contentReference = new EPiServer.Core.ContentReference(5);
+
+    // Get the page (or block)
+    var articlePage = repository.Get<ArticlePage>(Model.ArticlePageReference);
+
+    // var ArticlePage = Model.ArticlePageReference.ParseReference(.se.GetType() as ArticlePage;
+}
+
+@*<div class="accordion" role="tablist">
+    <div class="card">
+        <div class="card-header" role="tab" id="heading_@(articlePage.ID)">
+            <div class="panel panel-heading">
+                <div class="panel-heading" data-toggle="collapse" href="#collapse_@(articlePage.ID)" aria-expanded="true" aria-controls="collapseOne">
+                    @articlePage.Heading
+                </div>
+            </div>
+            <div class="collapse in" id="collapse_@(articlePage.ID)" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+                <div class="container"> <span class="col-sm-8"></span> <span class="col-sm-4"></span></div>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+
+
+   
+
+        <div class="tab col-md-4 col-sm-6 col-xs-12">
+            <input id="tab-@(articlePage.ID)" type="checkbox" name="tabs">
+            <label for="tab-@(articlePage.ID)">@articlePage.Heading</label>
+            <div class="tab-content">
+               @articlePage.Description <img src="@EPiServer.Web.Routing.UrlResolver.Current.GetUrl(articlePage.Image)" style="width:80px;height:80px" />
+            </div>
+        </div>
+        @*<div class="tab col-md-4 col-sm-6 col-xs-12">
+            <input id="tab-two" type="checkbox" name="tabs">
+            <label for="tab-two">Label Two</label>
+            <div class="tab-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+            </div>
+        </div>
+        <div class="tab col-md-4 col-sm-6 col-xs-12">
+            <input id="tab-three" type="checkbox" name="tabs">
+            <label for="tab-three">Label Three</label>
+            <div class="tab-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+            </div>
+        </div>*@
+    
+
+
+
+
+@*<div class="wrapper container">
+
+
+    <div class="half row">
+
+        <div class="tab col-md-4 col-sm-6 col-xs-12">
+            <input id="tab-one" type="checkbox" name="tabs">
+            <label for="tab-one">Label One</label>
+            <div class="tab-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+            </div>
+        </div>
+        <div class="tab col-md-4 col-sm-6 col-xs-12">
+            <input id="tab-two" type="checkbox" name="tabs">
+            <label for="tab-two">Label Two</label>
+            <div class="tab-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+            </div>
+        </div>
+        <div class="tab col-md-4 col-sm-6 col-xs-12">
+            <input id="tab-three" type="checkbox" name="tabs">
+            <label for="tab-three">Label Three</label>
+            <div class="tab-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>*@
+
