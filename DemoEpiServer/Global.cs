@@ -36,6 +36,8 @@ namespace DemoEpiServer
 
             [Display(Name = "Specialized", Order = 7)]
             public const string Specialized = "Specialized";
+
+            public const string Carousel = "Carousel Settings";
         }
 
         /// <summary>
@@ -43,6 +45,7 @@ namespace DemoEpiServer
         /// </summary>
         public static class ContentAreaTags
         {
+            public const string Sidebar = "Sidebar";
             public const string FullWidth = "span12";
             public const string TwoThirdsWidth = "span8";
             public const string HalfWidth = "span6";

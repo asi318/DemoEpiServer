@@ -1,0 +1,101 @@
+﻿@using DemoEpiServer.Business
+@using DemoEpiServer.Helpers
+@using EPiServer.Core
+@using EPiServer.Shell.Web.Mvc.Html
+@using EPiServer.Web.Mvc.Html
+@using EPiServer.Web.Routing
+@using System.Web.Mvc
+@using System.Web.Mvc.Ajax
+@using System.Web.Mvc.Html
+@using System.Web.Routing
+
+@helper CarouselTemplate(List<DemoEpiServer.Models.ViewModels.CarouselItemViewModel> carouselItems)
+{
+    <div class="col-md-12">
+        <div class="content-article">
+            <div id="home-slider" class="carousel  slide" data-ride="carousel">
+                <div class="overlay"></div>
+                <ol class="carousel-indicators">
+                    @for (int i = 0; i < carouselItems.Count(); i++)
+                    {
+                        <li data-target="#home-slider" data-slide-to="@i" class="@(i == 0 ? "active" : string.Empty)"></li>
+                    }
+                </ol>
+                <div class="carousel-inner">
+                    @for (int i = 0; i < carouselItems.Count(); i++)
+                    {
+                        <div class="item @(i == 0 ? "active" : string.Empty)">
+                            @*<div class="slide-1" style="background-image:url(@carouselItems[i].ImageUrl);height: 100vh; background-position: center center;  background-repeat: no-repeat"></div>
+                           @* <img src="@carouselItems[i].ImageUrl" alt="@carouselItems[i].TitleText" />
+                            <div class="hero">
+                                <hgroup>
+                                    <h1>We are creative</h1>
+                                    <h3>Get start your next awesome project </h3>
+                                </hgroup>
+                               
+                            </div>*@
+                            <img src="@carouselItems[i].ImageUrl"  alt="First slide">
+                            <div class="container" style="">
+                                <div class="carousel-caption">
+                                    <h1>@carouselItems[i].TitleText</h1>
+                                    <p>@carouselItems[i].Tagline</p>
+                                    <p><a class="btn btn-large btn-primary" href="#">Sign up today</a></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    }
+                </div>
+                <a class="left carousel-control" style="z-index:4" href="#home-slider" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" style="color:#000000"></span>
+                </a>
+                <a class="right carousel-control" style="z-index:4" href="#home-slider" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" style="color:#000000"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    @*<div id="myCarousel" class="carousel slide">
+         Indicators 
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item">
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Example headline.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-large btn-primary" href="#">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="data:," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Second slide" alt="Second slide" style="height: 500px; width: 100%; display: block;">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item active">
+                <img src="data:," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Third slide" alt="Third slide" style="height: 500px; width: 100%; display: block;">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>One more for good measure.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>*@
+}

@@ -47,5 +47,8 @@ namespace DemoEpiServer.Models.Pages
         [Display(GroupName = Global.GroupNames.SiteSettings)]
         public virtual SiteLogotypeBlock SiteLogotype { get; set; }
 
+        [AllowedTypes(typeof(ICarouselBlock))]
+        public virtual ContentArea ContentArea { get; set; }
+
     }
 }

@@ -1,3 +1,5 @@
+using EPiServer.Core;
+
 namespace DemoEpiServer.Models.Pages
 {
     /// <summary>
@@ -9,6 +11,7 @@ namespace DemoEpiServer.Models.Pages
     [SiteImageUrl(Global.StaticGraphicsFolderPath + "page-type-thumbnail-article.png")]
     public class ArticlePage : StandardPage
     {
-        
+      
+
     }
 }

@@ -5,6 +5,7 @@ using EPiServer.Filters;
 using EPiServer.Framework.Web;
 using EPiServer.ServiceLocation;
 using EPiServer;
+using EPiServer.Web.Routing;
 
 namespace DemoEpiServer.Business
 {
@@ -13,6 +14,10 @@ namespace DemoEpiServer.Business
     /// </summary>
     public static class ContentExtensions
     {
+        public static string ImageUrl(this ContentReference ImageRef)
+        {
+            return UrlResolver.Current.GetUrl(ImageRef);
+        }
         /// <summary>
         /// Filters content which should not be visible to the user. 
         /// </summary>

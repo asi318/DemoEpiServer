@@ -12,6 +12,8 @@ using DemoEpiServer.Business;
 using EPiServer.Web.Mvc.Html;
 using EPiServer.Web.Routing;
 using EPiServer;
+using DemoEpiServer.Models.ViewModels;
+using DemoEpiServer.Models.Blocks;
 
 namespace DemoEpiServer.Helpers
 {
@@ -144,6 +146,40 @@ namespace DemoEpiServer.Helpers
             }
 
             return helper.BeginConditionalLink(shouldWriteLink, url, title, cssClass);
+        }
+
+
+        public static IHtmlString Carousel(
+            this HtmlHelper helper,
+            IList<ContentAreaItem> itemList,
+            Func<List<CarouselItemViewModel>, HelperResult> itemTemplate = null)
+        {
+            itemTemplate = itemTemplate ?? GetDefaultCarouselItemTemplate(helper);
+            var contentLoader = ServiceLocator.Current.GetInstance<IContentLoader>();
+            var contentAreaContentLinks = itemList.Select(c => c.ContentLink).ToList();
+
+            var contentList = new List<CarouselItemViewModel>();
+            IContentData cdata;
+            foreach (var item in itemList)
+            {
+                cdata = null;
+                contentLoader.TryGet<IContentData>(item.ContentLink, out cdata);
+                if (cdata != null && cdata is ICarouselBlock)
+                {
+                    contentList.Add(new CarouselItemViewModel(cdata as ICarouselBlock));
+                }
+            }
+
+            var buffer = new StringBuilder();
+            var writer = new StringWriter(buffer);
+            itemTemplate(contentList).WriteTo(writer);
+
+            return new MvcHtmlString(buffer.ToString());
+        }
+
+        private static Func<IList<CarouselItemViewModel>, HelperResult> GetDefaultCarouselItemTemplate(HtmlHelper helper)
+        {
+            return x => x is PageData ? new HelperResult(writer => writer.Write(helper.PageLink(x.First().Page as PageData))) : null;
         }
 
         public class ConditionalLink : IDisposable

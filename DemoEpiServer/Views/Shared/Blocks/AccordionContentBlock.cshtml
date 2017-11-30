@@ -1,0 +1,18 @@
+@using EPiServer.Web.Routing
+@model AccordionContentBlock
+
+<div class="accordion" role="tablist">
+<div class="card">
+    <div class="card-header" role="tab" id="heading_@(Model.ID)">
+        <div class="panel panel-default" >
+            <div class="panel-heading" data-toggle="collapse" href="#collapse_@(Model.ID)" aria-expanded="true" aria-controls="collapseOne">
+           @Model.Heading</div>                     
+        </div>
+        <div class="collapse in" id="collapse_@(Model.ID)" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+            <div class="container"> <span class="col-sm-8">@Model.Description</span> <span class="col-sm-4"><img src="@UrlResolver.Current.GetUrl(Model.Image)" style="width:80px;height:80px" /></span></div>
+        </div>
+    </div>        
+ </div>
+</div>
+
+ 

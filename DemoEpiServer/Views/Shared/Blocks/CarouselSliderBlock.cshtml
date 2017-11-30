@@ -1,0 +1,15 @@
+﻿
+@using EPiServer.Core
+@model CarouselSliderBlock
+@{
+    if (Model.CarouselContentArea != null)
+    {
+        @Html.Carousel(Model.CarouselContentArea.Items, Templates.CarouselTemplate)
+    }
+
+}
+
+
+
+
+
