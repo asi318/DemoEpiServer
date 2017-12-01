@@ -4,12 +4,12 @@
 @model IPageViewModel<SitePageData>
 <div >
     <div id="header" class="container-fluid">
-        <div class="row">
+        <div class="row span2">
             <a href="@Model.Layout.LogotypeLinkUrl" title="@Model.Layout.Logotype.Title">
                 @Html.PropertyFor(x => x.Layout.Logotype)
             </a>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 span7">
             
             <div class="alloyMenu">
                 <div class="navbar">
@@ -47,6 +47,32 @@
             </div>
 
         </div>
+
+        <div class="span3">
+            <div class="lang-selector dropdown">
+                @{
+                    var activeLanguages = EPiServer.ServiceLocation.ServiceLocator.Current.GetInstance<EPiServer.DataAbstraction.ILanguageBranchRepository>().ListEnabled();
+                    var preferredLang = EPiServer.Globalization.ContentLanguage.PreferredCulture.Name;
+                    var langSelectListItem = new List<SelectListItem>();
+                    foreach (var lang in activeLanguages)
+                    {
+                        SelectListItem selectItem = new SelectListItem();
+                        selectItem.Text = lang.Name;
+                        selectItem.Value = Url.PageLinkUrl(Model.CurrentPage.ContentLink).ToString().Replace(Model.CurrentPage.Language.ToString(), lang.LanguageID);
+
+                        if (string.Equals(preferredLang, lang.LanguageID, StringComparison.InvariantCultureIgnoreCase))
+                        {
+                            selectItem.Selected = true;
+                        }
+
+                        langSelectListItem.Add(selectItem);
+                    }
+                }
+                @Html.DropDownList(preferredLang, langSelectListItem, new { @onchange = "location = this.value;" })
+            </div>
+
+        </div>
+
     </div>
 </div>
 
