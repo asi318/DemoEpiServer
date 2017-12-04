@@ -1,0 +1,617 @@
+{
+  "Assets": [
+    {
+      "Id": 50,
+      "ExternalId": "cf6NjO9lncAAAAAAAACzpw",
+      "AssetType": 0,
+      "Title": "VCT Overview - Op Model and Org",
+      "FileName": "Op Model and Org Overview.pptx",
+      "Author": {
+        "UserName": "Karl Johan Sundin"
+      },
+      "CreationDate": "2017-07-22T10:22:15",
+      "URL": "\/VCT\/Value Creation Toolbox\/VCT for Investment\/Organization & Human Resources\/Operating Model & Organization\/Operating Model & Org Overview\/Op Model and Org Overview.pptx",
+      "IsPreviewURLUpdated": false,
+      "PreviewURL": "https:\/\/www.dropbox.com\/scl\/fi\/ukjl3qsb8l3udvwb6wu88\/Op%20Model%20and%20Org%20Overview.pptx?dl=0",
+      "AssetGroup": "Operating Model & Org Overview",
+      "IsParent": true,
+      "ParentId": null,
+      "Tags": [
+        {
+          "TagType": "Category",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Organization & Human Resources"
+          ]
+        },
+        {
+          "TagType": "SubCategory",
+          "NativeTagValue": "Operating Model & Organization",
+          "TagValues": [
+            "Operating Model & Organization"
+          ]
+        },
+        {
+          "TagType": "ContentType",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Tool"
+          ]
+        },
+        {
+          "TagType": "Sector",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Consumer Goods",
+            "Energy & Environmental",
+            "Healthcare",
+            "Industrials",
+            "Services",
+            "TMT"
+          ]
+        },
+        {
+          "TagType": "Geography",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Asia",
+            "Nordic",
+            "North America",
+            "ANZ",
+            "Other W Europe",
+            "DACH",
+            "Central Eastern Europe",
+            "Benelux"
+          ]
+        }
+      ],
+      "Quote": "Introduction material to the Operating Model & Organization sub module",
+      "Description": "Introduction material covering Operating Model & Organization Levers broken into two categories; i) Basic operating model decisions ii) Organizational design. Includes standardized structural org blueprint",
+      "BBCurated": {
+        "BBcuratedById": 0,
+        "IsBBCurated": false
+      },
+      "IsDeleted": false,
+      "NumberOfLikes": 1,
+      "IsLikedByUser": false,
+      "NumberOfViews": 4,
+      "DisplayImageUrl": "https:\/\/www.dropbox.com\/s\/z1v8c9io481jvzl\/iStock_000017334369Small-300x262.jpg?raw=1",
+      "IsDisplayImageUrlUpdated": false,
+      "IsDefaultDisplayImage": false,
+      "IsErrorUploadingDisplayImage": false,
+      "UpdatedDate": "2017-11-21T16:07:13.1437649",
+      "LastUpdatedBy": "caroline.afwinklerfelt@eqtpartners.com",
+      "SystemUpdatedBy": "VCT"
+    },
+    {
+      "Id": 54,
+      "ExternalId": "cf6NjO9lncAAAAAAAACzsg",
+      "AssetType": 0,
+      "Title": "RH_Services_ValueProposition",
+      "FileName": "RH_Services_ValueProposition.pdf",
+      "Author": {
+        "UserName": "Karl Johan Sundin"
+      },
+      "CreationDate": "2017-07-23T18:09:49",
+      "URL": "\/VCT\/Value Creation Toolbox\/VCT for Investment\/Organization & Human Resources\/Operating Model & Organization\/RH_Services_Value Proposition\/RH_Services_ValueProposition.pdf",
+      "IsPreviewURLUpdated": false,
+      "PreviewURL": "https:\/\/www.dropbox.com\/scl\/fi\/1z39xxoj66b2yldeqj9xj\/RH_Services_ValueProposition.pdf?dl=0",
+      "AssetGroup": "RH_Services_Value Proposition",
+      "IsParent": true,
+      "ParentId": null,
+      "Tags": [
+        {
+          "TagType": "Category",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Organization & Human Resources"
+          ]
+        },
+        {
+          "TagType": "SubCategory",
+          "NativeTagValue": "Operating Model & Organization",
+          "TagValues": [
+            "Operating Model & Organization"
+          ]
+        },
+        {
+          "TagType": "ContentType",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Pitch (external)"
+          ]
+        },
+        {
+          "TagType": "Sector",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Consumer Goods",
+            "Energy & Environmental",
+            "Healthcare",
+            "Industrials",
+            "TMT",
+            "Services"
+          ]
+        },
+        {
+          "TagType": "Geography",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Asia",
+            "Nordic",
+            "North America",
+            "Benelux",
+            "Central Eastern Europe",
+            "DACH",
+            "Other W Europe",
+            "ANZ"
+          ]
+        }
+      ],
+      "Quote": "Raymond Hofmann pitch",
+      "Description": "Raymond Hofmann pitch",
+      "BBCurated": {
+        "BBcuratedById": 0,
+        "IsBBCurated": false
+      },
+      "IsDeleted": false,
+      "NumberOfLikes": 1,
+      "IsLikedByUser": false,
+      "NumberOfViews": 2,
+      "DisplayImageUrl": "https:\/\/www.dropbox.com\/s\/mxtsbp3byxkpr3x\/AAEAAQAAAAAAAAcgAAAAJDAwNmVkZmYwLWFiZDEtNGQ0MC05ZGMyLWZhZjk4ODQ0NDA2ZQ.png?raw=1",
+      "IsDisplayImageUrlUpdated": false,
+      "IsDefaultDisplayImage": false,
+      "IsErrorUploadingDisplayImage": false,
+      "UpdatedDate": "2017-10-13T16:43:57.7120902",
+      "LastUpdatedBy": "karljohan.sundin@eqtpartners.com",
+      "SystemUpdatedBy": "VCT"
+    },
+    {
+      "Id": 56,
+      "ExternalId": "cf6NjO9lncAAAAAAAACztg",
+      "AssetType": 0,
+      "Title": "People  Governance Toolbox",
+      "FileName": "People  Governance Toolbox.pptx",
+      "Author": {
+        "UserName": "Karl Johan Sundin"
+      },
+      "CreationDate": "2017-07-23T20:32:05",
+      "URL": "\/VCT\/Value Creation Toolbox\/VCT for Investment\/Organization & Human Resources\/Operating Model & Organization\/People and Governance Toolbox\/People  Governance Toolbox.pptx",
+      "IsPreviewURLUpdated": false,
+      "PreviewURL": "https:\/\/www.dropbox.com\/scl\/fi\/92bu9bn22hb6rlfa1g058\/People%20%20Governance%20Toolbox.pptx?dl=0",
+      "AssetGroup": "People and Governance Toolbox",
+      "IsParent": true,
+      "ParentId": null,
+      "Tags": [
+        {
+          "TagType": "Category",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Organization & Human Resources"
+          ]
+        },
+        {
+          "TagType": "SubCategory",
+          "NativeTagValue": "Operating Model & Organization",
+          "TagValues": [
+            "Operating Model & Organization"
+          ]
+        },
+        {
+          "TagType": "ContentType",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Other"
+          ]
+        },
+        {
+          "TagType": "Sector",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Consumer Goods",
+            "Energy & Environmental",
+            "Healthcare",
+            "Industrials",
+            "Services",
+            "TMT"
+          ]
+        },
+        {
+          "TagType": "Geography",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Asia",
+            "Nordic",
+            "North America",
+            "Benelux",
+            "Central Eastern Europe",
+            "DACH",
+            "Other W Europe",
+            "ANZ"
+          ]
+        }
+      ],
+      "Quote": "People and governance toolbox developed by Tomas Linden built around a 3 x 3 matrix",
+      "Description": "People and governance toolbox developed by Tomas Linden built around a 3 x 3 matrix",
+      "BBCurated": {
+        "BBcuratedById": 0,
+        "IsBBCurated": false
+      },
+      "IsDeleted": false,
+      "NumberOfLikes": 2,
+      "IsLikedByUser": false,
+      "NumberOfViews": 5,
+      "DisplayImageUrl": "https:\/\/www.dropbox.com\/s\/1fth7lrknp3y927\/3x3.jpg?raw=1",
+      "IsDisplayImageUrlUpdated": false,
+      "IsDefaultDisplayImage": false,
+      "IsErrorUploadingDisplayImage": false,
+      "UpdatedDate": "2017-11-21T16:02:37.7667713",
+      "LastUpdatedBy": "karljohan.sundin@eqtpartners.com",
+      "SystemUpdatedBy": "VCT"
+    },
+    {
+      "Id": 57,
+      "ExternalId": "cf6NjO9lncAAAAAAAACzvQ",
+      "AssetType": 0,
+      "Title": "BPI EQT 2015-12-18",
+      "FileName": "BPI EQT 2015-12-18.pptx",
+      "Author": {
+        "UserName": "Karl Johan Sundin"
+      },
+      "CreationDate": "2017-07-23T21:02:18",
+      "URL": "\/VCT\/Value Creation Toolbox\/VCT for Investment\/Organization & Human Resources\/Operating Model & Organization\/Beta Pitch\/BPI EQT 2015-12-18.pptx",
+      "IsPreviewURLUpdated": false,
+      "PreviewURL": "https:\/\/www.dropbox.com\/scl\/fi\/ttbux17qnw6xs8vxzclpe\/BPI%20EQT%202015-12-18.pptx?dl=0",
+      "AssetGroup": "Beta Pitch",
+      "IsParent": true,
+      "ParentId": null,
+      "Tags": [
+        {
+          "TagType": "Category",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Organization & Human Resources"
+          ]
+        },
+        {
+          "TagType": "SubCategory",
+          "NativeTagValue": "Operating Model & Organization",
+          "TagValues": [
+            "Operating Model & Organization"
+          ]
+        },
+        {
+          "TagType": "ContentType",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Pitch (external)"
+          ]
+        },
+        {
+          "TagType": "Sector",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Consumer Goods",
+            "Healthcare",
+            "Energy & Environmental",
+            "Industrials",
+            "Services",
+            "TMT"
+          ]
+        },
+        {
+          "TagType": "Geography",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Asia",
+            "Nordic",
+            "North America",
+            "Benelux",
+            "Central Eastern Europe",
+            "DACH",
+            "Other W Europe",
+            "ANZ"
+          ]
+        }
+      ],
+      "Quote": null,
+      "Description": null,
+      "BBCurated": {
+        "BBcuratedById": 0,
+        "IsBBCurated": false
+      },
+      "IsDeleted": false,
+      "NumberOfLikes": 0,
+      "IsLikedByUser": false,
+      "NumberOfViews": 2,
+      "DisplayImageUrl": "https:\/\/www.dropbox.com\/s\/9sbt5usu4x4efx3\/beta_logo__black_top.png?raw=1",
+      "IsDisplayImageUrlUpdated": false,
+      "IsDefaultDisplayImage": false,
+      "IsErrorUploadingDisplayImage": false,
+      "UpdatedDate": "2017-11-22T15:37:33.9385856",
+      "LastUpdatedBy": "karljohan.sundin@eqtpartners.com",
+      "SystemUpdatedBy": "VCT"
+    },
+    {
+      "Id": 234,
+      "ExternalId": "cf6NjO9lncAAAAAAAALMPg",
+      "AssetType": 0,
+      "Title": "SMART PE Portfolio Support_August 2017",
+      "FileName": "EQT_ghSMART PE Portfolio Support_August 2017.pdf",
+      "Author": {
+        "UserName": "Kristiaan Nieuwenburg"
+      },
+      "CreationDate": "2017-09-18T14:40:57",
+      "URL": "\/VCT\/Value Creation Toolbox\/VCT for Investment\/Organization & Human Resources\/Human Resources\/HR or Headhunter Advisory Pitches\/EQT_ghSMART PE Portfolio Support_August 2017.pdf",
+      "IsPreviewURLUpdated": false,
+      "PreviewURL": "https:\/\/www.dropbox.com\/scl\/fi\/tkwtnu003qetmbrbg2vrl\/EQT_ghSMART%20PE%20Portfolio%20Support_August%202017.pdf?dl=0",
+      "AssetGroup": "HR or Headhunter Advisory Pitches",
+      "IsParent": true,
+      "ParentId": null,
+      "Tags": [
+        {
+          "TagType": "Category",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Organization & Human Resources"
+          ]
+        },
+        {
+          "TagType": "SubCategory",
+          "NativeTagValue": "Human Resources",
+          "TagValues": [
+            "Human Resources"
+          ]
+        }
+      ],
+      "Quote": null,
+      "Description": null,
+      "BBCurated": {
+        "BBcuratedById": 0,
+        "IsBBCurated": false
+      },
+      "IsDeleted": false,
+      "NumberOfLikes": 1,
+      "IsLikedByUser": false,
+      "NumberOfViews": 5,
+      "DisplayImageUrl": "thumb10.jpg",
+      "IsDisplayImageUrlUpdated": false,
+      "IsDefaultDisplayImage": true,
+      "IsErrorUploadingDisplayImage": false,
+      "UpdatedDate": "2017-11-21T16:06:24.8587463",
+      "LastUpdatedBy": "caroline.afwinklerfelt@eqtpartners.com",
+      "SystemUpdatedBy": "VCT"
+    },
+    {
+      "Id": 237,
+      "ExternalId": null,
+      "AssetType": 1,
+      "Title": "Tedx Beyond empowerment",
+      "FileName": "Tedx Beyond empowerment",
+      "Author": {
+        "UserName": "karljohan.sundin@eqtpartners.com"
+      },
+      "CreationDate": "2017-09-22T11:46:15.762",
+      "URL": "https:\/\/www.youtube.com\/watch?v=Ej4n3w4kMa4",
+      "IsPreviewURLUpdated": false,
+      "PreviewURL": null,
+      "AssetGroup": "",
+      "IsParent": true,
+      "ParentId": null,
+      "Tags": [
+        {
+          "TagType": "Category",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Organization & Human Resources"
+          ]
+        },
+        {
+          "TagType": "SubCategory",
+          "NativeTagValue": "Operating Model & Organization",
+          "TagValues": [
+            "Operating Model & Organization"
+          ]
+        },
+        {
+          "TagType": "ContentType",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Other"
+          ]
+        },
+        {
+          "TagType": "Sector",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Consumer Goods",
+            "Energy & Environmental",
+            "Healthcare",
+            "Industrials",
+            "Services",
+            "TMT"
+          ]
+        },
+        {
+          "TagType": "Geography",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Asia",
+            "Nordic",
+            "North America",
+            "Benelux",
+            "Central Eastern Europe",
+            "DACH",
+            "Other W Europe",
+            "ANZ",
+            "UK",
+            "South America",
+            "Africa"
+          ]
+        }
+      ],
+      "Quote": "TED Talk on self-managed organization",
+      "Description": "Beyond empowerment - are we ready for the self-managed organization? Doug Kirkpatrick at TEDxChico",
+      "BBCurated": {
+        "BBcuratedById": 0,
+        "IsBBCurated": false
+      },
+      "IsDeleted": false,
+      "NumberOfLikes": 1,
+      "IsLikedByUser": false,
+      "NumberOfViews": 5,
+      "DisplayImageUrl": "LinkThumbnail\/TED.jpg",
+      "IsDisplayImageUrlUpdated": false,
+      "IsDefaultDisplayImage": false,
+      "IsErrorUploadingDisplayImage": false,
+      "UpdatedDate": "2017-11-14T15:18:01.9857191",
+      "LastUpdatedBy": "karljohan.sundin@eqtpartners.com",
+      "SystemUpdatedBy": "VCT"
+    },
+    {
+      "Id": 282,
+      "ExternalId": "cf6NjO9lncAAAAAAAALTag",
+      "AssetType": 0,
+      "Title": "VCT Overview - Human Resources",
+      "FileName": "EQT-VCT-02-HumanResources.pptx",
+      "Author": {
+        "UserName": "Caroline af Winklerfelt"
+      },
+      "CreationDate": "2017-10-03T17:09:38",
+      "URL": "\/VCT\/Value Creation Toolbox\/VCT for Investment\/Organization & Human Resources\/Human Resources\/Human Resources\/EQT-VCT-02-HumanResources.pptx",
+      "IsPreviewURLUpdated": false,
+      "PreviewURL": "https:\/\/www.dropbox.com\/scl\/fi\/w1oc6f04hfcr193asce30\/EQT-VCT-02-HumanResources.pptx?dl=0",
+      "AssetGroup": "Human Resources",
+      "IsParent": true,
+      "ParentId": null,
+      "Tags": [
+        {
+          "TagType": "Category",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Organization & Human Resources"
+          ]
+        },
+        {
+          "TagType": "SubCategory",
+          "NativeTagValue": "Human Resources",
+          "TagValues": [
+            "Human Resources"
+          ]
+        },
+        {
+          "TagType": "ContentType",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Tool"
+          ]
+        },
+        {
+          "TagType": "Sector",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Consumer Goods",
+            "Energy & Environmental",
+            "Healthcare",
+            "Industrials",
+            "Services",
+            "TMT"
+          ]
+        },
+        {
+          "TagType": "Geography",
+          "NativeTagValue": null,
+          "TagValues": [
+            "Asia",
+            "Nordic",
+            "North America",
+            "Benelux",
+            "Central Eastern Europe",
+            "DACH",
+            "Other W Europe",
+            "ANZ",
+            "UK",
+            "South America",
+            "Africa"
+          ]
+        }
+      ],
+      "Quote": "VCT overview on Human Resources",
+      "Description": "This contains the VCT overview on Human Resources, which includes the presentation with key approaches, methodologies, etc, a key question sample and sample KPIs.\n",
+      "BBCurated": {
+        "BBcuratedById": 0,
+        "IsBBCurated": false
+      },
+      "IsDeleted": false,
+      "NumberOfLikes": 0,
+      "IsLikedByUser": false,
+      "NumberOfViews": 3,
+      "DisplayImageUrl": "https:\/\/www.dropbox.com\/s\/11c27npgp0q5g3v\/Talent.JPG?raw=1",
+      "IsDisplayImageUrlUpdated": false,
+      "IsDefaultDisplayImage": false,
+      "IsErrorUploadingDisplayImage": false,
+      "UpdatedDate": "2017-11-07T17:12:29.9463792",
+      "LastUpdatedBy": "caroline.afwinklerfelt@eqtpartners.com",
+      "SystemUpdatedBy": "VCT"
+    }
+  ],
+  "Success": true,
+  "ErrorCode": null,
+  "Message": "Assets sent successfully with count = 7",
+  "MiscellaneousText": null,
+  "DynamicFilters": [
+    {
+      "TagType": "Category",
+      "NativeTagValue": null,
+      "TagValues": [
+        "Organization & Human Resources"
+      ]
+    },
+    {
+      "TagType": "SubCategory",
+      "NativeTagValue": null,
+      "TagValues": [
+        "Operating Model & Organization",
+        "Human Resources"
+      ]
+    },
+    {
+      "TagType": "ContentType",
+      "NativeTagValue": null,
+      "TagValues": [
+        "Tool",
+        "Pitch (external)",
+        "Other"
+      ]
+    },
+    {
+      "TagType": "Sector",
+      "NativeTagValue": null,
+      "TagValues": [
+        "Consumer Goods",
+        "Energy & Environmental",
+        "Healthcare",
+        "Industrials",
+        "Services",
+        "TMT"
+      ]
+    },
+    {
+      "TagType": "Geography",
+      "NativeTagValue": null,
+      "TagValues": [
+        "Asia",
+        "Nordic",
+        "North America",
+        "ANZ",
+        "Other W Europe",
+        "DACH",
+        "Central Eastern Europe",
+        "Benelux",
+        "UK",
+        "South America",
+        "Africa"
+      ]
+    }
+  ]
+}

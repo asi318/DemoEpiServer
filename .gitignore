@@ -240,3 +240,6 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/DemoEpiServer/App_Data/blobs
+/DemoEpiServer/Properties/PublishProfiles
+/EPiUpdatePackage

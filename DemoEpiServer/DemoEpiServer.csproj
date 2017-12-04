@@ -137,6 +137,10 @@
     <Reference Include="EPiServer.LinkAnalyzer, Version=10.10.3.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\packages\EPiServer.CMS.Core.10.10.3\lib\net45\EPiServer.LinkAnalyzer.dll</HintPath>
     </Reference>
+    <Reference Include="EPiServer.LiveMonitor, Version=8.4.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPiServer.LiveMonitor.8.4.2\Lib\EPiServer.LiveMonitor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EPiServer.Logging.Log4Net, Version=2.1.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\packages\EPiServer.Logging.Log4Net.2.1.0\lib\net45\EPiServer.Logging.Log4Net.dll</HintPath>
     </Reference>
@@ -179,6 +183,18 @@
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Client, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Client.2.1.0\lib\net45\Microsoft.AspNet.SignalR.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.0.3\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb, Version=2.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.2.0.3\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -353,6 +369,7 @@
     <Compile Include="Business\UIDescriptors\ContainerPageUIDescriptor.cs" />
     <Compile Include="Business\UIDescriptors\ICarouselBlockUIDescriptor.cs" />
     <Compile Include="Controllers\ArticlePageController.cs" />
+    <Compile Include="Controllers\CareerPageController.cs" />
     <Compile Include="Controllers\DefaultPageController.cs" />
     <Compile Include="Controllers\FindSearchPageController.cs" />
     <Compile Include="Controllers\ImageFileController.cs" />
@@ -383,15 +400,19 @@
     </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="Helpers\CategorizableExtensions.cs" />
+    <Compile Include="Helpers\ExternalContent.cs" />
+    <Compile Include="Helpers\ExternalDocStub.cs" />
     <Compile Include="Helpers\HtmlHelpers.cs" />
     <Compile Include="Helpers\UrlHelpers.cs" />
     <Compile Include="Models\Blocks\AccordionContentBlock.cs" />
     <Compile Include="Models\Blocks\ArticleBlock.cs" />
     <Compile Include="Models\Blocks\ButtonBlock.cs" />
     <Compile Include="Models\Blocks\AccordionBlock.cs" />
+    <Compile Include="Models\Blocks\CareerBlock.cs" />
     <Compile Include="Models\Blocks\CarouselBlock.cs" />
     <Compile Include="Models\Blocks\CarouselSliderBlock.cs" />
     <Compile Include="Models\Blocks\EditorialBlock.cs" />
+    <Compile Include="Models\Blocks\ExternalLinksBlock.cs" />
     <Compile Include="Models\Blocks\FormBlock.cs" />
     <Compile Include="Models\Blocks\ICarouselBlock.cs" />
     <Compile Include="Models\Blocks\ImageBlock.cs" />
@@ -407,6 +428,7 @@
     <Compile Include="Models\Media\ImageFile.cs" />
     <Compile Include="Models\Media\VideoFile.cs" />
     <Compile Include="Models\Pages\ArticlePage.cs" />
+    <Compile Include="Models\Pages\CareerPage.cs" />
     <Compile Include="Models\Pages\CommonPage.cs" />
     <Compile Include="Models\Pages\ContainerPage.cs" />
     <Compile Include="Models\Pages\FindSearchPage.cs" />
@@ -463,6 +485,12 @@
     <Content Include="Resources\LanguageFiles\PropertyNames.xml" />
     <Content Include="Resources\LanguageFiles\Views.xml" />
     <Content Include="Resources\LanguageFiles\_ReadMe.txt" />
+    <Content Include="App_Data\DocumentsJSON.json" />
+    <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.4.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.0.3.js" />
+    <Content Include="Scripts\jquery.signalR-2.0.3.min.js" />
     <Content Include="Static\css\bootstrap-collapse.js" />
     <Content Include="Static\css\bootstrap-responsive.css" />
     <Content Include="Static\css\bootstrap-theme.css" />
@@ -596,7 +624,14 @@
     <Content Include="modules\_protected\EPiServer.Forms\Views\ElementBlocks\Web.config" />
     <Content Include="modules\_protected\EPiServer.Forms\Forms.config" />
     <Content Include="modules\_protected\EPiServer.Forms\EPiServer.Forms.zip" />
+    <Content Include="modules\_protected\EPiServer.LiveMonitor\EPiServer.LiveMonitor.zip" />
+    <Content Include="modules\_protected\EPiServer.LiveMonitor\LiveMonitor.config" />
+    <Content Include="modules\_protected\EPiServer.LiveMonitor\module.config" />
+    <Content Include="modules\_protected\EPiServer.LiveMonitor\web.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Views\CareerPage\Index.cshtml" />
+    <Content Include="Views\Shared\Blocks\CareerBlock.cshtml" />
+    <Content Include="Views\Shared\Blocks\ExternalLinksBlock.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

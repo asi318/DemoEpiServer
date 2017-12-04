@@ -1,0 +1,12 @@
+@using EPiServer.Core
+@model ExternalLinksBlock
+<ul>
+    @foreach (var link in Model.Links)
+    {
+    <li>
+        <a target="@link.Target" href="@Url.PageUrl(link.Href)">
+            @link.Text
+        </a>
+    </li>
+    }
+</ul>
