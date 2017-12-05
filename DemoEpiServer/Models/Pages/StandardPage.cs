@@ -22,5 +22,10 @@ namespace DemoEpiServer.Models.Pages
             GroupName = SystemTabNames.Content,
             Order = 320)]
         public virtual ContentArea MainContentArea { get; set; }
+
+        [Display(
+           GroupName = SystemTabNames.Content,
+           Order = 330)]
+        public virtual ContentArea ImageContentArea { get; set; }
     }
 }

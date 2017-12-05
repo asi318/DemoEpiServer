@@ -18,7 +18,7 @@
     <input id="tab-@(articlePage.ID)" type="checkbox" name="tabs">
     <label for="tab-@(articlePage.ID)">@articlePage.Heading</label>
     <div class="tab-content">
-        @articlePage.Description.ToHtmlString().Substring(0, 150) <img src="@EPiServer.Web.Routing.UrlResolver.Current.GetUrl(articlePage.Image)" style="width:80px;height:80px" />
+        @Html.Raw(articlePage.Description.ToHtmlString().Substring(0, 150)) <img src="@EPiServer.Web.Routing.UrlResolver.Current.GetUrl(articlePage.Image)" style="width:80px;height:80px" />
         <br /><a href="@articlePage.LinkURL"><b>Read More</b></a>
     </div>
 </div>

@@ -23,8 +23,7 @@ namespace DemoEpiServer.Business.Initialization
                         "~/Static/js/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/bundles/css")
-                .Include("~/Static/css/bootstrap.css", new CssRewriteUrlTransform())
-                .Include("~/Static/css/bootstrap-responsive.css")
+                .Include("~/Static/css/bootstrap.min.css", new CssRewriteUrlTransform())                
                 .Include("~/Static/css/media.css")
                 .Include("~/Static/css/style.css", new CssRewriteUrlTransform())
                 .Include("~/Static/css/editmode.css"));
