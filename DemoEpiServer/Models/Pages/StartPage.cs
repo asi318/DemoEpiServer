@@ -14,7 +14,7 @@ namespace DemoEpiServer.Models.Pages
         GUID = "19671657-B684-4D95-A61F-8DD4FE60D559",
         GroupName = Global.GroupNames.Specialized)]
     [SiteImageUrl]
-    [AvailableContentTypes(Availability.Specific, Include = new[] { typeof(CommonPage), typeof(ContentFolder) })]
+    //[AvailableContentTypes(Availability.Specific, Include = new[] { typeof(CommonPage), typeof(ContentFolder) })]
     public class StartPage : SitePageData
     {
         [Display(

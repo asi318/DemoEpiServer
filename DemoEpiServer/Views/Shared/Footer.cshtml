@@ -4,20 +4,24 @@
         <hr />
         <div class="row">
             <div class="span3">
-                <h3>@Html.Translate("/footer/aboutus")</h3>
-                @Html.PropertyFor(x => x.Layout.AboutUsActionUrl)
+                <h3>
+                    <a href="@Model.Layout.AboutUsActionUrl" title="@Html.Translate("/footer/aboutus")">@Html.Translate("/footer/aboutus")</a>
+                </h3>
             </div>
             <div class="span3">
-                <h3>@Html.Translate("/footer/contactus")</h3>
-                @Html.PropertyFor(x => x.Layout.ContactUsActionUrl)
+                <h3>
+                    <a href="@Model.Layout.ContactUsActionUrl" title="@Html.Translate("/footer/contactus")">@Html.Translate("/footer/contactus")</a>
+                </h3>
             </div>
             <div class="span3">
-                <h3>@Html.Translate("/footer/news")</h3>
-                @Html.PropertyFor(x => x.Layout.NewsPages)
+                <h3>
+                    <a href="@Model.Layout.NewsPages" title="@Html.Translate("/footer/news")">@Html.Translate("/footer/news")</a>
+                </h3>
             </div>
             <div class="span3">
-                <h3>@Html.Translate("/footer/careers")</h3>
-                @Html.PropertyFor(x => x.Layout.CareersActionUrl)
+                <h3>
+                    <a href="@Model.Layout.CareersActionUrl" title="@Html.Translate("/footer/careers")">@Html.Translate("/footer/careers")</a>
+                </h3>
                 <ul>
                     <li>
                         @if (Model.Layout.LoggedIn)
