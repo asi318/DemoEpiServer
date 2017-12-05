@@ -14,7 +14,7 @@ namespace DemoEpiServer.Models.Pages
         GUID = "19671657-B684-4D95-A61F-8DD4FE60D559",
         GroupName = Global.GroupNames.Specialized)]
     [SiteImageUrl]
-    [AvailableContentTypes(Availability.Specific, Include = new[] { typeof(ContentFolder), typeof(CareerPage), typeof(ArticlePage), typeof(CommonPage) })]
+    [AvailableContentTypes(Availability.Specific, Include = new[] { typeof(CommonPage), typeof(ContentFolder) })]
     public class StartPage : SitePageData
     {
         [Display(
@@ -43,6 +43,12 @@ namespace DemoEpiServer.Models.Pages
 
         [Display(GroupName = Global.GroupNames.SiteSettings)]
         public virtual PageReference SearchPageLink { get; set; }
+
+        [Display(GroupName = Global.GroupNames.SiteSettings)]
+        public virtual PageReference AboutUsPageLink { get; set; }
+
+        [Display(GroupName = Global.GroupNames.SiteSettings)]
+        public virtual PageReference CareersPageLink { get; set; }
 
         [Display(GroupName = Global.GroupNames.SiteSettings)]
         public virtual SiteLogotypeBlock SiteLogotype { get; set; }

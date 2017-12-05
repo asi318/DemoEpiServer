@@ -4,20 +4,20 @@
         <hr />
         <div class="row">
             <div class="span3">
-                <h3>@Html.Translate("/footer/products")</h3>
-                @Html.PropertyFor(x => x.Layout.ProductPages)
+                <h3>@Html.Translate("/footer/aboutus")</h3>
+                @Html.PropertyFor(x => x.Layout.AboutUsActionUrl)
             </div>
             <div class="span3">
-                <h3>@Html.Translate("/footer/company")</h3>
-                @Html.PropertyFor(x => x.Layout.CompanyInformationPages)
+                <h3>@Html.Translate("/footer/contactus")</h3>
+                @Html.PropertyFor(x => x.Layout.ContactUsActionUrl)
             </div>
             <div class="span3">
                 <h3>@Html.Translate("/footer/news")</h3>
                 @Html.PropertyFor(x => x.Layout.NewsPages)
             </div>
             <div class="span3">
-                <h3>@Html.Translate("/footer/customerzone")</h3>
-                @Html.PropertyFor(x => x.Layout.CustomerZonePages)
+                <h3>@Html.Translate("/footer/careers")</h3>
+                @Html.PropertyFor(x => x.Layout.CareersActionUrl)
                 <ul>
                     <li>
                         @if (Model.Layout.LoggedIn)

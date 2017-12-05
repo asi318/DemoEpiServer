@@ -19,6 +19,9 @@ namespace DemoEpiServer.Models.ViewModels
         public MvcHtmlString LoginUrl { get; set; }
         public MvcHtmlString LogOutUrl { get; set; }
         public MvcHtmlString SearchActionUrl { get; set; }
+        public MvcHtmlString AboutUsActionUrl { get; set; }
+        public MvcHtmlString ContactUsActionUrl { get; set; }
+        public MvcHtmlString CareersActionUrl { get; set; }
 
         public bool IsInReadonlyMode {get;set;}
     }
