@@ -1,44 +1,46 @@
 @model IPageViewModel<SitePageData>
-<div class="row footerrow">
-    <div class="span12 footer">
-        <hr />
-        <div class="row">
-            <div class="span3">
-                <h3>
-                    <a href="@Model.Layout.AboutUsActionUrl" title="@Html.Translate("/footer/aboutus")">@Html.Translate("/footer/aboutus")</a>
-                </h3>
-            </div>
-            <div class="span3">
-                <h3>
-                    <a href="@Model.Layout.ContactUsActionUrl" title="@Html.Translate("/footer/contactus")">@Html.Translate("/footer/contactus")</a>
-                </h3>
-            </div>
-            <div class="span3">
-                <h3>
-                    <a href="@Model.Layout.NewsPages" title="@Html.Translate("/footer/news")">@Html.Translate("/footer/news")</a>
-                </h3>
-            </div>
-            <div class="span3">
-                <h3>
-                    <a href="@Model.Layout.CareersActionUrl" title="@Html.Translate("/footer/careers")">@Html.Translate("/footer/careers")</a>
-                </h3>
-                <ul>
-                    <li>
-                        @if (Model.Layout.LoggedIn)
-                        {
-                            @Html.ActionLink(Html.Translate("/footer/logout"), "Logout", new { language = @Model.CurrentPage.Language.Name })
-                        }
-                        else
-                        {
-                            if (!Model.Layout.IsInReadonlyMode)
+<div class="container-fluid">
+    <div class="row footer">
+        <div class="footer">
+            <hr />
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>
+                        <a href="@Model.Layout.AboutUsActionUrl" title="@Html.Translate("/footer/aboutus")">@Html.Translate("/footer/aboutus")</a>
+                    </h3>
+                </div>
+                <div class="col-md-3">
+                    <h3>
+                        <a href="@Model.Layout.ContactUsActionUrl" title="@Html.Translate("/footer/contactus")">@Html.Translate("/footer/contactus")</a>
+                    </h3>
+                </div>
+                <div class="col-md-3">
+                    <h3>
+                        <a href="@Model.Layout.NewsPages" title="@Html.Translate("/footer/news")">@Html.Translate("/footer/news")</a>
+                    </h3>
+                </div>
+                <div class="col-md-3">
+                    <h3>
+                        <a href="@Model.Layout.CareersActionUrl" title="@Html.Translate("/footer/careers")">@Html.Translate("/footer/careers")</a>
+                    </h3>
+                    <ul>
+                        <li>
+                            @if (Model.Layout.LoggedIn)
                             {
-                                <a href="@Model.Layout.LoginUrl" title="@Html.Translate("/footer/login")">@Html.Translate("/footer/login")</a>
+                                @Html.ActionLink(Html.Translate("/footer/logout"), "Logout", new { language = @Model.CurrentPage.Language.Name })
                             }
-                        }
-                    </li>
-                </ul>
+                            else
+                            {
+                                if (!Model.Layout.IsInReadonlyMode)
+                                {
+                                    <a href="@Model.Layout.LoginUrl" title="@Html.Translate("/footer/login")">@Html.Translate("/footer/login")</a>
+                                }
+                            }
+                        </li>
+                    </ul>
 
+                </div>
             </div>
         </div>
     </div>
-</div>
+    </div>

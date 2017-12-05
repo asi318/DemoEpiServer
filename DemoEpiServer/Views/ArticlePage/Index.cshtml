@@ -4,20 +4,30 @@
 
 @if (Model != null)
 {
-<div class="accordion" role="tablist">
-    <div class="card">
-        <div class="card-header" role="tab" id="heading_@(Model.CurrentPage.ID)">
-            <div class="panel panel-default">
-                <div class="panel-heading" data-toggle="collapse" href="#collapse_@(Model.CurrentPage.ID)" aria-expanded="true" aria-controls="collapseOne">
-                    @Model.CurrentPage.Heading
+    <div class="accordion" role="tablist">
+        <div class="card">
+            <div class="card-header" role="tab" id="heading_@(Model.CurrentPage.ID)">
+                <div class="panel panel-default">
+                    <div class="panel-heading" data-toggle="collapse" href="#collapse_@(Model.CurrentPage.ID)" aria-expanded="true" aria-controls="collapseOne">
+                        @Model.CurrentPage.Heading
+                    </div>
+                </div>
+                <div class="collapse in" id="collapse_@(Model.CurrentPage.ID)" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+                    <div class="container"> 
+                        <div class="row">
+                            <div class="col-md-8">
+                                <img src="@UrlResolver.Current.GetUrl(Model.CurrentPage.Image)" style="width:80px;height:80px" />
+                                @Model.CurrentPage.Description
+                            </div>
+                            <div class="">
+                                @Html.PropertyFor(x => x.CurrentPage.MainContentArea, new { CssClass = "col-md-4" })
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="collapse in" id="collapse_@(Model.CurrentPage.ID)" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
-                <div class="container"> <span class="col-sm-8">@Model.CurrentPage.Description</span> <span class="col-sm-4"><img src="@UrlResolver.Current.GetUrl(Model.CurrentPage.Image)" style="width:80px;height:80px" /></span></div>
-            </div>
         </div>
+       
     </div>
-    @Html.PropertyFor(x => x.CurrentPage.MainContentArea, new { CssClass = "row equal-height", tag = Global.ContentAreaTags.FullWidth })
-</div>
 }
 
