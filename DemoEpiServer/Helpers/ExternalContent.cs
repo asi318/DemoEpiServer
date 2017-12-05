@@ -33,7 +33,7 @@ namespace DemoEpiServer.Helpers
             {
                 LinkItem lnkItem = new LinkItem();
                 lnkItem.Title = asset.Title;
-                lnkItem.Text = asset.Description;
+                lnkItem.Text = asset.PreviewURL;
                 lnkItem.Href = asset.URL;
                 listItem.Add(lnkItem);
             }
