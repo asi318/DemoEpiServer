@@ -4,17 +4,19 @@
 
 @{Html.RenderPartial("Breadcrumbs", Model);}
 
-<div class="row">
-    <div class="span4">
-        <div class="row">
-            <div class="span4">
-                @{Html.RenderPartial("SubNavigation", Model);}
-                @RenderSection("RelatedContent", false)
+<div class="container">
+    <div class="row">
+        <div class="span4">
+            <div class="row">
+                <div class="span4">
+                    @{Html.RenderPartial("SubNavigation", Model);}
+                    @RenderSection("RelatedContent", false)
+                </div>
             </div>
         </div>
-    </div>
-               
-    <div class="span8">        	
-        @RenderBody()
+
+        <div class="span8">
+            @RenderBody()
+        </div>
     </div>
 </div>

@@ -19,13 +19,14 @@
         }
     }
 }
-
-<div class="row hideMyTracks">
-    <div class="span12">
-        <ul class="alloyBreadcrumb">
-            @Html.ContentLink(SiteDefinition.Current.StartPage)
-            <span class="divider">/</span>
-            @Html.MenuList(SiteDefinition.Current.StartPage, ItemTemplate, requireVisibleInMenu: false, requirePageTemplate: false) 
-        </ul>
+<div class="container">
+    <div class="row hideMyTracks">
+        <div class="span12">
+            <ul class="alloyBreadcrumb">
+                @Html.ContentLink(SiteDefinition.Current.StartPage)
+                <span class="divider">/</span>
+                @Html.MenuList(SiteDefinition.Current.StartPage, ItemTemplate, requireVisibleInMenu: false, requirePageTemplate: false)
+            </ul>
+        </div>
     </div>
-</div> 
+</div>

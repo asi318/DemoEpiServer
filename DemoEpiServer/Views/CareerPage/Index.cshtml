@@ -1,10 +1,11 @@
 ﻿@using DemoEpiServer
 @model PageViewModel<CareerPage> 
 
-<h1 @Html.EditAttributes(x => x.CurrentPage.MetaTitle)>@Model.CurrentPage.MetaTitle</h1>
+@{ Layout = "~/Views/Shared/Layouts/_LeftNavigation.cshtml"; }
 
 <div class="row">
-   @Html.PropertyFor(x => x.CurrentPage.CareerContent, new { CssClass = "row equal-height", tag = Global.ContentAreaTags.FullWidth })
+    <h1 @Html.EditAttributes(x => x.CurrentPage.MetaTitle)>@Model.CurrentPage.MetaTitle</h1>
+   @Html.PropertyFor(x => x.CurrentPage.CareerContent, new { CssClass = "row equal-height" })
 </div>
 
 
