@@ -13,24 +13,24 @@
                     </div>
                 </div>
                 <div class="collapse in" id="collapse_@(Model.CurrentPage.ID)" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
-                    <div class="container"> 
+                    <div class="container">
                         <div class="row">
                             <div class="col-md-12">
                                 <img src="@UrlResolver.Current.GetUrl(Model.CurrentPage.Image)" style="width:100%;height:auto" />
-                                </div>
-                                <div class="col-md-8">
-
-                                    @Model.CurrentPage.Description
-                                </div>
-                                <div class="">
-                                    @Html.PropertyFor(x => x.CurrentPage.MainContentArea, new { CssClass = "col-md-4" })
-                                </div>
                             </div>
+                            <div class="col-md-8">
+
+                                @Model.CurrentPage.Description
+                            </div>
+                            <div class="">
+                                @Html.PropertyFor(x => x.CurrentPage.MainContentArea, new { CssClass = "col-md-4" })
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-       
+
     </div>
 }
 
